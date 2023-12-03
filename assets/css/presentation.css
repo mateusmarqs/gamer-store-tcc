@@ -19,6 +19,7 @@
   
   .presentation-bg {
     background-color: #232323;
+    height: max-content;
   }
   
   .presentation-container {
