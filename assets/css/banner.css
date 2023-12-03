@@ -9,24 +9,7 @@
   object-fit: cover;
 }
 
-.main-banner.desktop {
+.main-banner {
   width: 100%;
   display: block;
-}
-
-.main-banner.mobile {
-  width: 100%;
-  display: none;
-}
-
-@media (max-width: 750px) {
-  .main-banner.desktop {
-    width: 100%;
-    display: none;
-  }
-
-  .main-banner.mobile {
-    width: 100%;
-    display: block;
-  }
 }
