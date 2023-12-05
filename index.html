@@ -10,19 +10,25 @@
 
 	<link rel="icon" type="svg" href="./assets/imgs/small-icon.webp" />
 
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
+
+	<!-- <link rel="preload" as="image" href="./assets/imgs/fullBanner1.webp" >
+	<link rel="preload" as="image" href="./assets/imgs/fullBanner2.webp" > -->
+	<link rel="preload" as="image" href="./assets/imgs/fullBannerMobile1.webp">
+	<!-- <link rel="preload" as="image" href="./assets/imgs/fullBannerMobile2.webp"> -->
 	
 	<link rel="preload" as="style" href="assets/css/config.css" onload="this.rel='stylesheet'">
 	<link rel="preload" as="style" href="assets/css/header.css" onload="this.rel='stylesheet'">
 	<link rel="preload" as="style" href="assets/css/banner.css" onload="this.rel='stylesheet'">
-	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="assets/css/categories.css">
-	<link rel="stylesheet" href="assets/css/animation.css">
-	<link rel="stylesheet" href="assets/css/presentation.css">
-	<link rel="stylesheet" href="assets/css/featuredPoducts.css">
-	<link rel="stylesheet" href="assets/css/instagramPosts.css">
-	<link rel="stylesheet" href="assets/css/footer.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" media="print" onload="this.media='all'"/>
+	<link rel="stylesheet" href="assets/css/categories.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="assets/css/animation.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="assets/css/presentation.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="assets/css/featuredPoducts.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="assets/css/instagramPosts.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" href="assets/css/footer.css" media="print" onload="this.media='all'">
 </head>
 <body>
 	<header>
@@ -46,14 +52,14 @@
 		</div>
 	</header>
 	<main>
-		<section class="main-banner desktop">
+		<!-- <section class="main-banner desktop">
 			<div class="swiper mainBannerSwiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide"><a href=""><img src="./assets/imgs/fullBanner1.webp" alt=""></a></div>
 					<div class="swiper-slide"><a href=""><img src="./assets/imgs/fullBanner2.webp" alt="" loading="lazy"></a></div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<section class="main-banner mobile">
 			<div class="swiper mainBannerSwiper">
 				<div class="swiper-wrapper">
@@ -182,7 +188,6 @@
 		</section>
 	</main>
 	<footer>
-		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<div class="logo">
 			<img src="./assets/imgs/logo.webp" alt="">
 		</div>
@@ -221,7 +226,8 @@
 			<a href="#">Images by FreePik</a>
 		</div>
 	</footer>
-	<script>
+	<script async src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script async>
 		var swiper = new Swiper(".mainBannerSwiper", {
 			autoplay: {
 				delay: 3000,
@@ -266,7 +272,7 @@
 
 		});
 	</script>
-	<script src="./assets/js/main.js"></script>
+	<script async src="./assets/js/main.js"></script>
 </body>
 
 </html>
