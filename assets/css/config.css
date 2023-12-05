@@ -1,24 +1,10 @@
-/* @font-face {
-  font-family: 'PT Sans';
-  src: url(../fonts/PTSans-Bold.ttf) format('truetype');
-  font-style: normal;
-  font-weight: bold
-}
-
-@font-face {
-  font-family: 'PT Sans';
-  src: url(../fonts/PTSans-Regular.ttf) format('truetype');
-  font-style: normal;
-  font-weight: normal;
-} */
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
-    /* font-family: 'PT Sans', sans-serif, Arial, Helvetica, sans-serif; */
+    font-family: 'PT Sans', sans-serif, Arial, Helvetica, sans-serif;
   }
   
   body {
