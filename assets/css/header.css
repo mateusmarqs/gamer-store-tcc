@@ -41,10 +41,17 @@ header {
   header .main-menu .menuitem > a {
     color: #414151;
   }
+
+  .sub-menu {
+    width: 116px;
+    display: flex;
+    justify-content: space-between;
+  }
   
   header .sub-menu > a {
     color: #414151;
-    margin-left: 15px;
+    height: 21px;
+    width: 23px;
     font-size: 20px;
     transition: 0.3s;
   }
